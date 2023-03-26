@@ -165,17 +165,13 @@ Then, the output of the program should be:
 """
 
 
-def answer_7(x, y):                                 # Might find a way to use a Numpy arrays instead of a list later
-    result = []                                     # This will do for now
-    for row in range(x):
-        for col in range(y):
-            multi = row * col
-            result.append(multi)
+def answer_7(x, y):
+    result = [col * row for col in range(x) for row in range(y)]
     array = np.array(result)
     answer = np.reshape(array, (x, y))
     return answer
 
 
-print(answer_7(5, 3))
+print(answer_7(3, 5))
 
 
