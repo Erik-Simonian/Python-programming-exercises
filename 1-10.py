@@ -172,6 +172,23 @@ def answer_7(x, y):
     return answer
 
 
-print(answer_7(3, 5))
+# print(answer_7(3, 5))
+# -----------------------------------------------------------------
+
+# -----------------------------------------------------------------
+"""Question 8:
+Write a program that accepts a comma separated sequence of words as input and prints the words 
+in a comma-separated sequence after sorting them alphabetically.
+Suppose the following input is supplied to the program:
+without,hello,bag,world
+Then, the output should be:
+bag,hello,without,world"""
 
 
+def answer_8(txt):
+    text = [word for word in txt.split(",")]
+    text.sort()
+    return text
+
+
+# print(answer_8("without,hello,bag,world"))
