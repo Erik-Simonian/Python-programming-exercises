@@ -50,7 +50,7 @@ def answer2(n):
 
 # user_input = int(input())             # Uncomment for and input option
 # print(answer2(user_input))
-num = 8                                 # You can change "num" value the factorial 
+num = 8                                 # You can change "num" value the factorial
 # print(answer2(num))                     # of a desired number
 # -----------------------------------------------------
 
@@ -192,3 +192,23 @@ def answer_8(txt):
 
 
 # print(answer_8("without,hello,bag,world"))
+# -------------------------------------------------
+
+# -------------------------------------------------
+"""Question 9:
+Write a program that accepts sequence of lines as input 
+and prints the lines after making all characters in the sentence capitalized.
+Suppose the following input is supplied to the program:
+Hello world
+Practice makes perfect
+Then, the output should be:
+HELLO WORLD
+PRACTICE MAKES PERFECT"""
+
+
+def answer_9():
+    text = input().upper()
+    return text
+
+
+print(answer_9())
