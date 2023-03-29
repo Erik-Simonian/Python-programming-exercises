@@ -211,4 +211,24 @@ def answer_9():
     return text
 
 
-print(answer_9())
+# print(answer_9())
+# -----------------------------------
+
+# -----------------------------------
+"""Question 10:
+Write a program that accepts a sequence of whitespace separated words as input 
+and prints the words after removing all duplicate words and sorting them alphanumerically.
+Suppose the following input is supplied to the program:
+hello world and practice makes perfect and hello world again
+Then, the output should be:
+again and hello makes perfect practice world"""
+
+
+def answer_10():
+    word_list = [word for word in input().split(" ")]
+    result = " ".join(sorted(list(set(word_list))))
+    return result
+
+
+# print(answer_10())
+
