@@ -39,4 +39,29 @@ def answer_12():                                        # Not pretty but will do
     return result
 
 
-print(answer_12())
+# print(answer_12())
+# ----------------------------------------
+
+# ----------------------------------------
+"""Question 13:
+Write a program that accepts a sentence and calculate the number of letters and digits.
+Suppose the following input is supplied to the program:
+hello world! 123
+Then, the output should be:
+LETTERS 10
+DIGITS 3"""
+
+
+def answer_13():
+    dict_result = {"LETTERS": 0, "DIGITS": 0}
+    msg = input()
+    for i in msg:
+        if i.isalpha():
+            dict_result["LETTERS"] += 1
+        elif i.isdigit():
+            dict_result["DIGITS"] += 1
+    for k, v in dict_result.items():                                # Could just print twice but I like this more
+        print(k, v)
+
+
+answer_13()
