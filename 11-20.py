@@ -64,4 +64,30 @@ def answer_13():
         print(k, v)
 
 
-answer_13()
+# answer_13()
+# --------------------------------------------
+
+# --------------------------------------------
+"""Question 14:
+Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+Suppose the following input is supplied to the program:
+Hello world!
+Then, the output should be:
+UPPER CASE 1
+LOWER CASE 9
+"""
+
+
+def answer_14():
+    dict_result = {"UPPER CASE": 0, "LOWER CASE": 0}
+    msg = input()
+    for i in msg:
+        if i.isupper():
+            dict_result["UPPER CASE"] += 1
+        elif i.islower():
+            dict_result["LOWER CASE"] += 1
+    for k, v in dict_result.items():
+        print(k, v)
+
+
+# answer_14()
