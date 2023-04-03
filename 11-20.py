@@ -91,3 +91,23 @@ def answer_14():
 
 
 # answer_14()
+# ---------------------------------------
+
+# ---------------------------------------
+"""Question 15:
+Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a.
+Suppose the following input is supplied to the program:
+9
+Then, the output should be:
+11106"""
+
+
+def answer_15(n):
+    n1 = int(str(n) + str(n))
+    n2 = int(str(n) + str(n) + str(n))
+    n3 = int(str(n) + str(n) + str(n) + str(n))
+    return n + n1 + n2 + n3
+
+
+# print(answer_15(9))
+
