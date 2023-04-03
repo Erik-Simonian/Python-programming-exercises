@@ -102,11 +102,13 @@ Then, the output should be:
 11106"""
 
 
-def answer_15(n):
-    n1 = int(str(n) + str(n))
-    n2 = int(str(n) + str(n) + str(n))
-    n3 = int(str(n) + str(n) + str(n) + str(n))
-    return n + n1 + n2 + n3
+def answer_15(n):                                          # Could use recursion instead
+    tot = ""
+    result = 0
+    for element in range(4):
+        tot += str(n)
+        result += int(tot)
+    return result
 
 
 # print(answer_15(9))
