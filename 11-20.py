@@ -102,14 +102,26 @@ Then, the output should be:
 11106"""
 
 
-def answer_15(n):                                          # Could use recursion instead
+# def answer_15(n):
+#    tot = ""
+#    result = 0
+#    for element in range(4):
+#        tot += str(n)
+#        result += int(tot)
+#    return result
+
+answer_15_dict = {}
+
+
+def answer_15(n, r=4):                                      # Recursion version of answer_15
     tot = ""
-    result = 0
-    for element in range(4):
+    for i in range(r):
         tot += str(n)
-        result += int(tot)
-    return result
+        answer_15(n, r-1)
+        if tot not in answer_15_dict:
+            answer_15_dict[i] = int(tot)
+    return sum(answer_15_dict.values())
 
 
-# print(answer_15(9))
+print(answer_15(9))
 
