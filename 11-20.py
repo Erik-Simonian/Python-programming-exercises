@@ -1,6 +1,3 @@
-import numpy as np
-import math
-
 """Question 11:
 Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input 
 and then check whether they are divisible by 5 or not. 
@@ -13,7 +10,6 @@ Notes: Assume the data is input by console."""
 
 
 def answer_11():
-    result = []
     number_list = [word for word in input().split(",") if int(word, 2) % 5 == 0]
     return number_list
 
@@ -128,7 +124,8 @@ def answer_15(n, r=4):                                      # Recursion version 
 
 # ----------------------------------------
 """Question 16:
-Use a list comprehension to square each odd number in a list. The list is input by a sequence of comma-separated numbers.
+Use a list comprehension to square each odd number in a list. 
+The list is input by a sequence of comma-separated numbers.
 Suppose the following input is supplied to the program:
 1,2,3,4,5,6,7,8,9
 Then, the output should be:
@@ -141,3 +138,39 @@ def answer_16():
 
 
 # print(answer_16())
+# -----------------------------------------------------
+
+# -----------------------------------------------------
+"""Question:
+Write a program that computes the net amount of a bank account based a transaction log from console input. 
+The transaction log format is shown as following:
+D 100
+W 200
+
+D means deposit while W means withdrawal.
+Suppose the following input is supplied to the program:
+D 300
+D 300
+W 200
+D 100
+Then, the output should be:
+500"""
+
+
+def answer_17():
+    net = 0
+    while True:
+        msg = input('How much do you want to deposit/withdraw?(type "end" to stop and check your account.)')
+        if msg[0].lower() == "d":
+            amount = int(msg[2:])
+            net += amount
+        elif msg[0].lower() == "w":
+            amount = int(msg[2:])
+            net -= amount
+        if msg.lower() == "end":
+            return net
+
+
+# print(answer_17())
+
+
