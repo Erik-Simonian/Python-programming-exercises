@@ -1,13 +1,11 @@
-import numpy as np
-import math
-
 """Question 1:
 Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
 between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line."""
 
 
-def answer1_np():                           # Numpy Version
+def answer1_np():
+    import numpy as np
     array = np.array([])                    # Had to add a couple of extra steps
     for i in np.arange(2000, 3201):         # to get that comma between elements.
         if i % 7 == 0 and i % 5 != 0:
@@ -112,16 +110,16 @@ class AnswerFive:
     def __init__(self):
         self.msg = None
 
-    def getString(self):
+    def get_string(self):
         self.msg = input()
 
-    def printString(self):
+    def prin_string(self):
         print(self.msg.upper())
 
 
 # obj = AnswerFive()
-# obj.getString()
-# obj.printString()
+# obj.get_string()
+# obj.print_string()
 # -------------------------------------------------------
 
 # -------------------------------------------------------
@@ -139,6 +137,7 @@ The output of the program should be:
 
 
 def answer_6():
+    import math
     c = 50
     h = 30
     result = []
@@ -166,6 +165,7 @@ Then, the output of the program should be:
 
 
 def answer_7(x, y):
+    import numpy as np
     result = [col * row for col in range(x) for row in range(y)]
     array = np.array(result)
     answer = np.reshape(array, (x, y))
@@ -231,4 +231,3 @@ def answer_10():
 
 
 # print(answer_10())
-
