@@ -6,13 +6,12 @@ The numbers obtained should be printed in a comma-separated sequence on a single
 
 def answer1_np():
     import numpy as np
-    array = np.array([])                    # Had to add a couple of extra steps
-    for i in np.arange(2000, 3201):         # to get that comma between elements.
+    array = np.array([])
+    for i in np.arange(2000, 3201):
         if i % 7 == 0 and i % 5 != 0:
             array = np.append(array, i)
     a = np.array(array, int)
-    result = a.tolist()
-    return result
+    print(', '.join([str(x) for x in a]))
 
 
 # print(answer1_np())
@@ -23,7 +22,7 @@ def answer1():
     for i in range(2000, 3201):
         if i % 7 == 0 and i % 5 != 0:
             result.append(i)
-    return result
+    print(*result, sep=", ")
 
 
 # print(answer1())
@@ -46,10 +45,7 @@ def answer2(n):
     return n * answer2(n - 1)
 
 
-# user_input = int(input())             # Uncomment for and input option
-# print(answer2(user_input))
-num = 8                                 # You can change "num" value the factorial
-# print(answer2(num))                     # of a desired number
+# print(answer2(8))
 # -----------------------------------------------------
 
 # -----------------------------------------------------
@@ -64,7 +60,7 @@ Then, the output should be:
 
 
 def answer3(n):
-    result = {}                                     # result = dict() also works here
+    result = {}
     for i in range(1, n+1):
         result[i] = i * i
     return result
