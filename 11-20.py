@@ -210,7 +210,7 @@ def answer_18():
 # ----------------------------------------------------
 
 # ----------------------------------------------------
-"""Question:
+"""Question 19:
 You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, 
 age and height are numbers. The tuples are input by console. The sort criteria is:
 1: Sort based on name;
@@ -240,3 +240,24 @@ def answer_19():
 
 
 # answer_19()
+# --------------------------------------------
+
+# --------------------------------------------
+"""Question 20
+
+Question:
+Define a class with a generator which can iterate the numbers, 
+which are divisible by 7, between a given range 0 and n."""
+
+
+def answer_20(n):
+    value = 0
+    while value < n:
+        value += 1
+        if value % 7 == 0:
+            yield value
+
+
+# for i in answer_20(100):
+#   print(i)
+
