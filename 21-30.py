@@ -112,3 +112,24 @@ def answer_24(n):
 
 
 # print(answer_24.__doc__)
+# ---------------------------------------------
+
+# ---------------------------------------------
+"""Question 25:
+    Define a class, which have a class parameter and have a same instance parameter."""
+
+
+class Dog:
+    def __init__(self, name=None, breed=None):
+        self.name = name
+        self.breed = breed
+
+    def __str__(self):
+        if not self.breed:
+            return f'{self.name} is a good dog.'
+        else:
+            return f'{self.name} is a {self.breed} dog.'
+
+
+Bob = Dog('Bub', 'Husky')
+print(Bob)
