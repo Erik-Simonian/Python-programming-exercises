@@ -132,4 +132,41 @@ class Dog:
 
 
 Bob = Dog('Bub', 'Husky')
-print(Bob)
+# print(Bob)
+# -------------------------------------------
+
+# -------------------------------------------
+"""Question 26:
+Define a function which can compute the sum of two numbers."""
+
+
+def answer_26_sum(n, m):
+    return n + m
+
+
+# print(answer_26_sum(3, 2))
+# ----------------------------------------
+
+# ----------------------------------------
+"""Question 27:
+Define a function that can convert a integer into a string and print it in console."""
+
+
+def answer_27(n):
+    print(str(n))
+
+
+# answer_27(5)
+# ------------------------------------
+
+# ------------------------------------
+"""Question 28:
+Define a function that can receive two integral numbers in string form 
+and compute their sum and then print it in console."""
+
+
+def answer_28(n, m):
+    print(int(n) + int(m))
+
+
+# answer_28("6", "5")
