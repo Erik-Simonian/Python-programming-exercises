@@ -260,4 +260,3 @@ def answer_20(n):
 
 # for i in answer_20(100):
 #   print(i)
-
