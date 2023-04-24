@@ -54,12 +54,44 @@ and the values are square of keys. The function should just print the values onl
 
 def answer_34():
     dict1 = dict()
-    dict1 = dict()
     for i in range(1, 21):
         dict1[i] = i ** 2
     for k, v in dict1.items():
         print(v)
 
 
-answer_34()
+# answer_34()
+# -----------------------------------------
 
+# -----------------------------------------
+"""Question 35:
+Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) 
+and the values are square of keys. The function should just print the keys only."""
+
+
+def answer_35():
+    dict1 = dict()
+    for i in range(1, 21):
+        dict1[i] = i ** 2
+    for k in dict1.keys():
+        print(k)
+
+
+# answer_35()
+# ----------------------------------
+
+# ----------------------------------
+"""Question 36:
+Define a function which can generate and print a list 
+where the values are square of numbers between 1 and 20 (both included)."""
+
+
+def answer_36():
+    result = [i ** 2 for i in range(1, 21)]
+    print(result)
+
+
+# answer_36()
+# --------------------------------------------
+
+# --------------------------------------------
