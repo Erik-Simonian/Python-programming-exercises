@@ -75,7 +75,6 @@ Write a program which can map() to make a list whose elements are square of elem
 
 
 def answer_45():
-    from math import sqrt
     num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     result = map(lambda x: x ** 2, num_list)
     result = list(result)
@@ -86,3 +85,49 @@ def answer_45():
 # -----------------------------------------
 
 # -----------------------------------------
+""""Question 46:
+Write a program which can map() and filter() to make a list whose elements 
+are square of even number in [1,2,3,4,5,6,7,8,9,10]."""
+
+
+def answer_46():
+    num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    sqr = map(lambda x: x ** 2, num_list)
+    sqr = list(sqr)
+    result = filter(lambda x: x % 2 == 0, sqr)
+    result = list(result)
+    print(result)
+
+
+# answer_46()
+# ----------------------------------------------
+
+# ----------------------------------------------
+"""Question 47:
+Write a program which can filter() to make a list whose elements are even number between 1 and 20 (both included)."""
+
+
+def answer_47():
+    result = filter(lambda x: x % 2 == 0, range(1, 21))
+    result = list(result)
+    print(result)
+
+
+# answer_47()
+# ----------------------------------------------
+
+# ----------------------------------------------
+"""Question 48:
+Write a program which can map() to make a list whose elements are square of numbers between 1 and 20 (both included)."""
+
+
+def answer_48():
+    result = map(lambda x: x ** 2, range(1, 21))
+    result = list(result)
+    print(result)
+
+
+# answer_48()
+# -----------------------------------------------
+
+# -----------------------------------------------
