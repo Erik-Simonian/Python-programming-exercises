@@ -131,3 +131,35 @@ def answer_48():
 # -----------------------------------------------
 
 # -----------------------------------------------
+"""Question 49:
+Define a class named American which has a static method called printNationality."""
+
+
+class American:
+    @staticmethod
+    def print_nationality():
+        print("American")
+
+
+# a_person = American()
+# American.print_nationality()
+# a_person.print_nationality()
+# -------------------------------------------------
+
+# -------------------------------------------------
+"""Question 50:
+Define a class named American and its subclass NewYorker. """
+
+
+class AnAmerican:
+    pass
+
+
+class NewYorker(AnAmerican):
+    pass
+
+
+# person_1 = AnAmerican()
+# person_2 = NewYorker()
+# print(type(person_1))
+# print(person_2.__class__.__mro__)
