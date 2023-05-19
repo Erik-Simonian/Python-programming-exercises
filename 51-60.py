@@ -93,3 +93,78 @@ def answer_55_test():
 
 
 # answer_55_test()
+# --------------------------------------------------
+
+# --------------------------------------------------
+"""Question 56:
+Define a custom exception class which takes a string message as attribute."""
+
+
+class CustomError(Exception):
+    """CustomError
+    Attributes:
+        error_info -- information regarding Custom Error
+    """
+    def __init__(self, error_info):
+        self.error_info = error_info
+
+
+# err = CustomError("UU56Kl")
+# print(err)
+# --------------------------------------------------
+
+# --------------------------------------------------
+"""Question 57
+Assuming that we have some email addresses in the "username@companyname.com" format, please write program 
+to print the user name of a given email address. Both user names and company names are composed of letters only."""
+
+
+def answer_57():
+    name = input().split('@')
+    print(name[0])
+
+
+# answer_57()
+# --------------------------------------------------
+
+# --------------------------------------------------
+"""Question 58:
+Assuming that we have some email addresses in the "username@companyname.com" format, please write program 
+to print the company name of a given email address. Both user names and company names are composed of letters only."""
+
+
+def answer_58():
+    name = input().split('@')
+    print(name[1])
+
+
+# answer_58()
+# --------------------------------------------------
+
+# --------------------------------------------------
+"""Question 59
+Write a program which accepts a sequence of words separated by whitespace as input 
+to print the words composed of digits only."""
+
+
+def answer_59():
+    import re
+    print(re.findall("\d+",input()))
+
+
+# answer_59()
+# --------------------------------------------------
+
+# --------------------------------------------------
+"""Question 60
+Print a unicode string "hello world"."""
+
+
+def answer_60():                                                    # In Python 3 all strings are unicode
+    import re                                                       # so here's "hello world" written
+    msg = "hello world"                                             # with unicode characters instead
+    result = (re.sub('.', lambda x: r'\u % 04X' % ord(x.group()), msg))
+    print(str(result))
+
+
+# answer_60()
