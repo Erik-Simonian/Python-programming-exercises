@@ -135,7 +135,8 @@ to print the company name of a given email address. Both user names and company 
 
 def answer_58():
     name = input().split('@')
-    print(name[1])
+    result = name[1].split('.')
+    print(result[0])
 
 
 # answer_58()
