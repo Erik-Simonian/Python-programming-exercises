@@ -200,7 +200,7 @@ Please generate a random float where the value is between 10 and 100 using Pytho
 
 def answer_70():
     import random
-    return random.randrange(10, 100)
+    return random.randrange(10, 101)
 
 
 # print(answer_70())
