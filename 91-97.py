@@ -66,3 +66,61 @@ def answer_93():
 # -------------------------------------------------------
 
 # -------------------------------------------------------
+"""Question 94:
+Please write a program which accepts a string from console and print it in reverse order."""
+
+
+def answer_94():
+    msg = input()
+    print(msg[::-1])
+
+
+# answer_94()
+# -------------------------------------------------------
+
+# -------------------------------------------------------
+"""Question 95:
+Please write a program which accepts a string from console and print the characters that have even indexes."""
+
+
+def answer_95():
+    msg = input()
+    print(msg[::2])
+
+
+# answer_95()
+# -------------------------------------------------------
+
+# -------------------------------------------------------
+"""Question 96:
+Please write a program which prints all permutations of [1,2,3]"""
+
+
+def answer_96():
+    import itertools
+    print(list(itertools.permutations([1, 2, 3])))
+
+
+# answer_96()
+# -------------------------------------------------------
+
+# -------------------------------------------------------
+"""Question 97:
+Write a program to solve a classic ancient Chinese puzzle: 
+We count 35 heads and 94 legs among the chickens and rabbits in a farm. 
+How many rabbits and how many chickens do we have?"""
+
+
+def answer_97():
+    start = 70
+    finish = 94
+    chicken = 35
+    rabbits = 0
+    while start != finish:
+        chicken -= 1
+        rabbits += 1
+        start += 2
+    print(f'Chickens: {chicken}, Rabbits: {rabbits}')
+
+
+# answer_97()
