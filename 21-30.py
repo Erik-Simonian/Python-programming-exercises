@@ -17,8 +17,7 @@ DOWN 3
 LEFT 3
 RIGHT 2
 Then, the output of the program should be:
-2
-"""
+2"""
 
 
 def answer_21():
@@ -63,8 +62,7 @@ and:1
 between:1
 choosing:1
 or:2
-to:1
-"""
+to:1"""
 
 
 def answer_22():
@@ -83,8 +81,7 @@ def answer_22():
 
 # ----------------------------------------------
 """Question 23:
-    Write a method which can calculate square value of number
-"""
+Write a method which can calculate square value of number."""
 
 
 def answer_23(n):
@@ -96,11 +93,11 @@ def answer_23(n):
 
 # ----------------------------------------------
 """Question 24:
-    Python has many built-in functions, and if you do not know how to use it, 
-    you can read document online or find some books. 
-    But Python has a built-in document function for every built-in functions.
-    Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
-    And add document for your own function"""
+Python has many built-in functions, and if you do not know how to use it, 
+you can read document online or find some books. 
+But Python has a built-in document function for every built-in functions.
+Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
+And add document for your own function."""
 
 
 # print(abs.__doc__)
@@ -116,7 +113,7 @@ def answer_24(n):
 
 # ---------------------------------------------
 """Question 25:
-    Define a class, which have a class parameter and have a same instance parameter."""
+Define a class, which have a class parameter and have a same instance parameter."""
 
 
 class Dog:

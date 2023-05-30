@@ -21,8 +21,7 @@ def answer_11():
 """Question 12:
 Write a program, which will find all such numbers between 1000 and 3000 (both included) 
 such that each digit of the number is an even number.
-The numbers obtained should be printed in a comma-separated sequence on a single line.
-"""
+The numbers obtained should be printed in a comma-separated sequence on a single line."""
 
 
 def answer_12():                                        # Not pretty but will do with a fixed range like that
@@ -70,8 +69,7 @@ Suppose the following input is supplied to the program:
 Hello world!
 Then, the output should be:
 UPPER CASE 1
-LOWER CASE 9
-"""
+LOWER CASE 9"""
 
 
 def answer_14():
@@ -191,8 +189,7 @@ Example
 If the following passwords are given as input to the program:
 ABd1234@1,a F1#,2w3E*,2We3345
 Then, the output of the program should be:
-ABd1234@1
-"""
+ABd1234@1"""
 
 
 def answer_18():
@@ -224,7 +221,7 @@ Jonny,17,91
 Jonny,17,93
 Json,21,85
 Then, the output of the program should be:
-[('John', '20', '90'), ('Jonny', '17', '91'), ('Jonny', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]"""
+[('John', '20', '90'), ('Jonny', '17', '91'), ('Jonny', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]."""
 
 
 def answer_19():

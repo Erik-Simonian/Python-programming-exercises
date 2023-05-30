@@ -56,7 +56,7 @@ an integral number between 1 and n (both included). and then the program should 
 Suppose the following input is supplied to the program:
 8
 Then, the output should be:
-{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}"""
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}."""
 
 
 def answer3(n):
@@ -79,7 +79,7 @@ Suppose the following input is supplied to the program:
 34,67,55,33,12,98
 Then, the output should be:
 ['34', '67', '55', '33', '12', '98']
-('34', '67', '55', '33', '12', '98')"""
+('34', '67', '55', '33', '12', '98')."""
 
 
 def answer4(n):
@@ -156,8 +156,7 @@ Example
 Suppose the following inputs are given to the program:
 3,5
 Then, the output of the program should be:
-[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
-"""
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]."""
 
 
 def answer_7(x, y):
